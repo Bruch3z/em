@@ -41,6 +41,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
 }
 
 .intro {
@@ -271,6 +272,16 @@ a:hover {
 }
 
 @media (max-width: 767.98px) {
+
+  /* Body styles */
+body {
+  padding: 0;
+}
+
+h2 {
+  font-size: 33px;
+}
+
   .logo {
     font-size: 3.5em;
   }
