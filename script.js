@@ -11,6 +11,8 @@ container.style.marginTop = 'calc(var(--header-height) + 25px)';
 intro.style.marginBottom = 'var(--header-height)';
 
 window.addEventListener('scroll', function() {
+    // Remove or comment out the code that changes the logo's size on scroll
+    /*
     scrollPercentage = window.scrollY / (window.innerHeight * 0.25); // Shrink over 25% of the page height
     var fontSize;
 
@@ -26,5 +28,5 @@ window.addEventListener('scroll', function() {
 
     logo.style.fontSize = fontSize + 'em';
     logo.style.letterSpacing = letterSpacing + 'rem';
-
+    */
 });
