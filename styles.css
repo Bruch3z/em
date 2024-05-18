@@ -1,5 +1,3 @@
-
-
 /* Reset box-sizing and disable zooming */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -31,7 +29,6 @@ body {
   background-color: #ffffff;
 }
 
-
 .container {
   display: flex;
   flex-direction: column;
@@ -48,7 +45,7 @@ body {
 
 .intro {
   max-width: 45rem;
-  text-align:center
+  text-align: center;
 }
 
 .logo {
@@ -69,7 +66,6 @@ body {
 .logo.small {
   border-bottom: 1px solid #ccc; /* Add a bottom border to the logo when it's small */
 }
-
 
 .logo2 {
   text-align: center;
@@ -101,7 +97,6 @@ body {
   transition: font-size 0.3s; /* Add a transition for smooth size change */
 }
 
-
 :root {
   --header-height: 100px; /* Set the default height of your header */
 }
@@ -109,8 +104,6 @@ body {
 .header {
   height: var(--header-height);
 }
-
-
 
 .btn {
   text-align: center;
@@ -121,11 +114,11 @@ body {
 }
 
 .btnproject {
-text-align: center;
-font-size: 22px;
-color: #001634;
-padding: 25px;
-text-decoration: underline;
+  text-align: center;
+  font-size: 22px;
+  color: #001634;
+  padding: 25px;
+  text-decoration: underline;
 }
 
 .btnproject:hover {
@@ -134,7 +127,7 @@ text-decoration: underline;
   color: #001634;
   padding: 25px;
   text-decoration: underline;
-  }
+}
 
 .btn:hover {
   color: #001634;
@@ -156,9 +149,6 @@ text-decoration: underline;
   text-decoration: underline;
 }
 
-
-
-
 .logo.sticky {
   position: fixed;
   top: 0;
@@ -176,10 +166,8 @@ text-decoration: underline;
   cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>'), auto;
 }
 
-
 .cards {
   margin-top: 25px;
-
 }
 
 .card {
@@ -193,11 +181,11 @@ text-decoration: underline;
   border: 0;
   padding: 0 0 15px 0;
 }
+
 .card-body ul {
   list-style-type: none; /* Remove bullet points */
   padding-left: 0; /* Remove default left padding */
 }
-
 
 .card-header {
   background-color: #ffffff;
@@ -228,7 +216,6 @@ text-decoration: underline;
   justify-content: center; /* Center vertically */
 }
 
-
 .substory {
   max-width: 45rem;
   text-align: center;
@@ -238,19 +225,18 @@ text-decoration: underline;
   margin-bottom: 6.5rem;
 }
 
-.story-img{
+.story-img {
   max-height: 20px;
 }
 
 .stickystory {
   position: sticky;
-  top: calc(var(--header-height) + 150px);
+  top: calc(var(--header-height) + 25px);
   z-index: 1;
   background-color: #ffffff;
   padding: 20px;
   margin-bottom: 20px;
 }
-
 
 h1 {
   font-size: 2.5em;
@@ -263,7 +249,6 @@ h2 {
 h3 {
   font-size: 22px;
 }
-
 
 h6 {
   font-size: 12px;
@@ -286,31 +271,28 @@ a:hover {
 }
 
 @media (max-width: 767.98px) {
-  /* Body styles */
-
-
   .logo {
     font-size: 3.5em;
   }
+
   .logo2 {
     font-size: 1.5em;
   }
-  
+
   .logo3 {
     font-size: 2.5em;
     top: 75px;
   }
-  
+
   .intro {
     max-width: 100%;
   }
 
   .project {
-      height: auto;
+    height: auto;
   }
 
   .project {
-
     margin: 0;
     padding: 0;
     display: flex; /* Use flexbox */
@@ -319,5 +301,6 @@ a:hover {
 
   .stickystory {
     padding: 0;
+    top: calc(var(--header-height) + 25px);
   }
 }
