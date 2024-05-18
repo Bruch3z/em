@@ -1,0 +1,323 @@
+
+
+/* Reset box-sizing and disable zooming */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+@viewport {
+  zoom: 1.0 !important;
+  width: device-width !important;
+}
+
+/* Fonts */
+@font-face {
+  font-family: 'SelectricRoman';
+  src: url('fonts/SelectricRoman.otf') format('opentype');
+  font-weight: normal;
+}
+
+/* Body styles */
+body {
+  overflow-x: hidden;
+  overscroll-behavior-x: none;
+  font-family: 'SelectricRoman', Georgia, serif;
+  font-size: 18px;
+  line-height: 1.2;
+  cursor: default;
+  color: #001634;
+  margin: .125rem 0;
+  padding: 1.5rem;
+  background-color: #ffffff;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-story {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro {
+  max-width: 45rem;
+  text-align:center
+}
+
+.logo {
+  text-align: center; /* Center the text horizontally */
+  z-index: 1000;
+  cursor: pointer;
+  font-size: 7em;
+  position: fixed;
+  padding: 15px 15px 0 15px;
+  top: 0;
+  left: 50%; /* Move the element to the center horizontally */
+  transform: translateX(-50%); /* Adjust to center the element */
+  width: 100%;
+  background: #ffffff;
+  transition: font-size 0.3s; /* Add a transition for smooth size change */
+}
+
+.logo.small {
+  border-bottom: 1px solid #ccc; /* Add a bottom border to the logo when it's small */
+}
+
+
+.logo2 {
+  text-align: center;
+  color: #001634;
+  z-index: 1000;
+  cursor: pointer;
+  font-size: 2.5em;
+  position: fixed;
+  padding: 15px 0 75px 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #ffffff;
+  transition: font-size 0.3s; /* Add a transition for smooth size change */
+}
+
+.logo3 {
+  text-align: center; /* Center the text horizontally */
+  z-index: 1000;
+  cursor: pointer;
+  font-size: 4.5em;
+  position: fixed;
+  top: auto;
+  padding-bottom: 0;
+  left: 50%; /* Move the element to the center horizontally */
+  transform: translateX(-50%); /* Adjust to center the element */
+  width: 100%;
+  background: #ffffff;
+  transition: font-size 0.3s; /* Add a transition for smooth size change */
+}
+
+
+:root {
+  --header-height: 100px; /* Set the default height of your header */
+}
+
+.header {
+  height: var(--header-height);
+}
+
+
+
+.btn {
+  text-align: center;
+  font-size: 33px;
+  color: #001634;
+  padding: 0;
+  text-decoration: underline;
+}
+
+.btnproject {
+text-align: center;
+font-size: 22px;
+color: #001634;
+padding: 25px;
+text-decoration: underline;
+}
+
+.btnproject:hover {
+  text-align: center;
+  font-size: 22px;
+  color: #001634;
+  padding: 25px;
+  text-decoration: underline;
+  }
+
+.btn:hover {
+  color: #001634;
+  text-decoration: underline;
+}
+
+.btn:focus {
+  color: #001634;
+  text-decoration: underline;
+}
+
+.plainlink {
+  color: #001634;
+  text-decoration: none;
+}
+
+.plainlink:hover {
+  color: #001634;
+  text-decoration: underline;
+}
+
+
+
+
+.logo.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.logo:hover {
+  text-decoration: none;
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>'), auto;
+}
+
+.logo3:hover {
+  text-decoration: none;
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>'), auto;
+}
+
+
+.cards {
+  margin-top: 25px;
+
+}
+
+.card {
+  background-color: #ffffff;
+  border: 0;
+}
+
+.card-body {
+  text-align: center;
+  background-color: none;
+  border: 0;
+  padding: 0 0 15px 0;
+}
+.card-body ul {
+  list-style-type: none; /* Remove bullet points */
+  padding-left: 0; /* Remove default left padding */
+}
+
+
+.card-header {
+  background-color: #ffffff;
+  border: 0;
+  padding: 0px;
+  display: flex;
+  justify-content: center; /* Center the buttons horizontally */
+  align-items: center; /* Center the buttons vertically */
+}
+
+.project {
+  background-color: #ffffff;
+  padding: 20px;
+  display: flex; /* Use flexbox */
+  align-items: center; /* Center vertically */
+}
+
+.project img {
+  max-width: 100%;
+  max-height: 100%;
+  padding: 10px;
+}
+
+.project-description {
+  text-align: center;
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Center vertically */
+}
+
+
+.substory {
+  max-width: 45rem;
+  text-align: center;
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Center vertically */
+  margin-bottom: 6.5rem;
+}
+
+.story-img{
+  max-height: 20px;
+}
+
+.stickystory {
+  position: sticky;
+  top: calc(var(--header-height) + 150px);
+  z-index: 1;
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 33px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+
+h6 {
+  font-size: 12px;
+  padding-top: 15px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.4em;
+  margin-bottom: 25px;
+}
+
+a {
+  color: #001634;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 767.98px) {
+  /* Body styles */
+
+
+  .logo {
+    font-size: 3.5em;
+  }
+  .logo2 {
+    font-size: 1.5em;
+  }
+  
+  .logo3 {
+    font-size: 2.5em;
+    top: 75px;
+  }
+  
+  .intro {
+    max-width: 100%;
+  }
+
+  .project {
+      height: auto;
+  }
+
+  .project {
+
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flexbox */
+    align-items: center; /* Center vertically */
+  }
+
+  .stickystory {
+    padding: 0;
+  }
+}
